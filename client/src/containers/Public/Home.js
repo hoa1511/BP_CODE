@@ -34,8 +34,11 @@ const Home = () => {
       case '/data-packing-area':
         setTitle('Dữ liệu khu đóng gói');
         break;
-      case '/chart':
-        setTitle('Biểu đồ');
+        case '/data-waiting-area/planning':
+        setTitle('Dữ liệu khu đóng gói');
+        break;
+      case '/data-waiting-area/chart':
+        setTitle('Dữ liệu khu trạm chờ');
         break;
       default:
         setTitle('Giám sát chung');

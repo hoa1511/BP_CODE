@@ -6,7 +6,7 @@ import ColdStorage from '../containers/Public/ColdStorage';
 import DataWaitingArea from '../containers/Public/DataWaitingArea';
 import DataPackingArea from '../containers/Public/DataPackingArea';
 import ChartPage from '../containers/Public/ChartPage';
-
+import PackingPlanning from '../containers/Public/PackingPlanning';
 const routes = [
   {
     key: 'monitor',
@@ -39,9 +39,13 @@ const routes = [
     component: DataPackingArea,
   },
   {
-    path: '/chart',
+    path: '/data-waiting-area/chart',
     component: ChartPage,
   },
+  {
+    path: '/data-waiting-area/planning',
+    component: PackingPlanning,
+  }
 ];
 
 export default routes;
