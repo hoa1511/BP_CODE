@@ -40,6 +40,9 @@ const Home = () => {
       case '/data-waiting-area/chart':
         setTitle('Dữ liệu khu trạm chờ');
         break;
+        case '/data-cold-storage':
+        setTitle('Dữ liệu kho mát');
+        break;
       default:
         setTitle('Giám sát chung');
     }

@@ -7,6 +7,7 @@ import DataWaitingArea from '../containers/Public/DataWaitingArea';
 import DataPackingArea from '../containers/Public/DataPackingArea';
 import ChartPage from '../containers/Public/ChartPage';
 import PackingPlanning from '../containers/Public/PackingPlanning';
+import DataColdStorage from '../containers/Public/DataColdStorage';
 const routes = [
   {
     key: 'monitor',
@@ -45,6 +46,10 @@ const routes = [
   {
     path: '/data-waiting-area/planning',
     component: PackingPlanning,
+  },
+  {
+    path: '/data-cold-storage',
+    component: DataColdStorage,
   }
 ];
 
