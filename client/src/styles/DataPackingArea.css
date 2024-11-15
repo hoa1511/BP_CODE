@@ -46,3 +46,27 @@ tbody td {
   border-radius: 10px; /* Bo tròn thanh kéo */
   border: 2px solid #f1f1f1; /* Đường viền xung quanh thanh kéo để tạo hiệu ứng bo tròn hơn */
 }
+/* Styles for Ant Design Table */
+.custom-ant-table .ant-table-thead > tr > th {
+  background-color: #d3f9d8;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.custom-ant-table .ant-table-tbody > tr > td {
+  text-align: center;
+  padding: 12px;
+}
+
+.custom-ant-table .ant-table-tbody > tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.custom-ant-table .ant-table-tbody > tr:hover {
+  background-color: #e6f7ff;
+}
+
+.custom-ant-table .ant-table-bordered .ant-table-cell {
+  border-color: #d9d9d9;
+}

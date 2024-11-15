@@ -18,11 +18,7 @@ const DataPackingArea = () => {
     { chuyền: 10, đạt: [20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20], lỗi: [20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20], tổng: [20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20] },
   ];
 
-  const totals = {
-    theoPhẩmCấp: { đạt: 80, lỗi: 4, tổng: 84 },
-    theoNước: { đạt: 2520, lỗi: 36, tổng: 2556 },
-    theoKhốiLượng: { đạt: 2680, lỗi: 40, tổng: 2720 },
-  };
+
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedStation, setSelectedStation] = useState(null);
   const navigate = useNavigate();
@@ -31,7 +27,8 @@ const DataPackingArea = () => {
     // Kiểm tra nếu date không null thì chuyển đổi sang đối tượng Date, nếu không thì set null
     setSelectedDate(date ? date.toDate() : null);
   };
-  const handleChange = (value) => {
+
+    const handleChange = (value) => {
     setSelectedStation(value);
   };
   const handleTabChange = (key) => {
@@ -63,6 +60,7 @@ const DataPackingArea = () => {
         <div>
           <Tabs activeKey={activeKey} onChange={handleTabChange} items={tabItems} />
         </div>
+
         <div className="flex justify-between items-center p-1">
           <div className="flex gap-2">
             <DatePicker
@@ -170,6 +168,7 @@ const DataPackingArea = () => {
                     ))}
                     <td className="border border-gray-300 ">{row.tổng.reduce((a, b) => a + b, 0)}</td>
                   </tr>
+                  
                 </React.Fragment>
               ))}
             </tbody>
