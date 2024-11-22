@@ -8,4 +8,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  fontFamily: {
+    sans: ['Inter', 'Arial', 'sans-serif'], // Thêm Inter vào font-sans
+  },
 };
