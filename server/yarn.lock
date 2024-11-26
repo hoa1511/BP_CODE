@@ -1038,6 +1038,11 @@ nodemon@^3.1.7:
     touch "^3.1.0"
     undefsafe "^2.0.5"
 
+nodes7@^0.3.18:
+  version "0.3.18"
+  resolved "https://registry.yarnpkg.com/nodes7/-/nodes7-0.3.18.tgz#14b3003c4679e71f2b2f85ccc69c6e3b6bb9dc5e"
+  integrity sha512-o5nnekjzX5tisE0oKxhddu4dbhhMVXcmYd0AqA3zDSBJFQ8iZYQAePehe/jL5VLE0lYJb+El8WrpVzgzxSQq7w==
+
 nopt@^7.2.0:
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/nopt/-/nopt-7.2.1.tgz#1cac0eab9b8e97c9093338446eddd40b2c8ca1e7"
